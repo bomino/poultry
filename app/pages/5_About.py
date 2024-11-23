@@ -62,8 +62,8 @@ def app():
     ## Support
 
     For support or feature requests, please contact:
-    - Email: support@example.com
-    - GitHub: [Project Repository](https://github.com/example/poultry-predictor)
+    - Email: mlawali@qidaya.com
+    - GitHub: [Project Repository](https://github.com/bomino/poultry)
     """)
     
     # Footer
