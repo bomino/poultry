@@ -7,7 +7,8 @@ from config.settings import APP_NAME, APP_ICON, LAYOUT
 st.set_page_config(
     page_title=APP_NAME,
     page_icon=APP_ICON,
-    layout=LAYOUT
+    layout=LAYOUT,
+    initial_sidebar_state="expanded"
 )
 
 # Main page header
@@ -77,3 +78,4 @@ main_page = """
 </style>
 """
 st.markdown(main_page, unsafe_allow_html=True)
+
