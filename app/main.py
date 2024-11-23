@@ -7,8 +7,7 @@ from config.settings import APP_NAME, APP_ICON, LAYOUT
 st.set_page_config(
     page_title=APP_NAME,
     page_icon=APP_ICON,
-    layout=LAYOUT,
-    initial_sidebar_state="expanded"
+    layout=LAYOUT
 )
 
 # Main page header
@@ -49,33 +48,4 @@ Your CSV file should include the following columns:
 # Footer
 st.markdown("---")
 st.markdown("Built with ❤️ using Streamlit")
-
-# Hide the default page name in sidebar
-hide_streamlit_style = """
-<style>
-    div[data-testid="stSidebarNav"] {
-        visibility: hidden;
-    }
-</style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-# Create a custom sidebar title for the main page
-main_page = """
-<style>
-    div.sidebar-content {
-        padding-top: 1rem;
-    }
-    div.sidebar-content:before {
-        content: 'Main';
-        font-size: 1rem;
-        margin-left: 20px;
-        position: relative;
-        top: 0;
-        color: rgb(49, 51, 63);
-        font-weight: 700;
-    }
-</style>
-"""
-st.markdown(main_page, unsafe_allow_html=True)
 
