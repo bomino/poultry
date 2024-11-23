@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px 
 from utils.data_processor import DataProcessor
 from utils.visualizations import Visualizer
 from config.settings import REQUIRED_COLUMNS
@@ -49,7 +50,7 @@ def app():
         
         # Create scatter plot
         fig = px.scatter(df, x=feature_1, y=feature_2, 
-                        trendline="ols",
+                
                         title=f"{feature_1} vs {feature_2}")
         st.plotly_chart(fig, use_container_width=True)
         
